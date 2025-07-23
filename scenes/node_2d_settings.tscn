@@ -1,0 +1,50 @@
+[gd_scene load_steps=3 format=3 uid="uid://dggcmb2wwnhnt"]
+
+[ext_resource type="Script" uid="uid://6jn3jpwhi85c" path="res://scripts/settings_menu.gd" id="1_kt6ix"]
+[ext_resource type="Texture2D" uid="uid://20epmgmvu2g6" path="res://assets/createplayer.png" id="2_722o8"]
+
+[node name="Node2D_Settings" type="Node2D"]
+script = ExtResource("1_kt6ix")
+
+[node name="Sprite2D_Background" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(1.12695, 0.634766)
+texture = ExtResource("2_722o8")
+
+[node name="CanvasLayer_UILayer" type="CanvasLayer" parent="."]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer_UILayer"]
+offset_left = 168.0
+offset_top = 23.0
+offset_right = 968.0
+offset_bottom = 623.0
+theme_override_constants/separation = 10
+
+[node name="Label_Title" type="Label" parent="CanvasLayer_UILayer/VBoxContainer"]
+layout_mode = 2
+text = "Настройки"
+
+[node name="Label_Resolution" type="Label" parent="CanvasLayer_UILayer/VBoxContainer"]
+layout_mode = 2
+text = "Разрешение"
+
+[node name="ResolutionSelector" type="OptionButton" parent="CanvasLayer_UILayer/VBoxContainer"]
+layout_mode = 2
+
+[node name="CheckBox_FullscreenToggle" type="CheckBox" parent="CanvasLayer_UILayer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label_Language" type="Label" parent="CanvasLayer_UILayer/VBoxContainer"]
+layout_mode = 2
+text = "Язык"
+
+[node name="LanguageSelector" type="OptionButton" parent="CanvasLayer_UILayer/VBoxContainer"]
+layout_mode = 2
+
+[node name="SaveButton" type="Button" parent="CanvasLayer_UILayer/VBoxContainer"]
+layout_mode = 2
+text = "Сохранить"
+
+[node name="BackButton" type="Button" parent="CanvasLayer_UILayer/VBoxContainer"]
+layout_mode = 2
+text = "Назад"

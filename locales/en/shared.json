@@ -1,0 +1,21 @@
+{
+  "race_human_name": "Human",
+  "race_human_desc": "A standard and average race. Not exceptional in any area, but not bad either.",
+  "race_human_abilities": "Balanced stats. No particular weaknesses or strengths.",
+
+  "race_golem_name": "Golem",
+  "race_golem_desc": "Humanoid creatures carved from stone. Durable but clumsy.",
+  "race_golem_abilities": "Resistant to fire, vulnerable to cold. Naturally tough.",
+
+  "race_inye_name": "The Others",
+  "race_inye_desc": "Mysterious beings that appeared from nowhere. Alien to this world.",
+  "race_inye_abilities": "Immune to cold, vulnerable to fire. Fragile, fear physical impact.",
+
+  "race_slepen_name": "Slepen",
+  "race_slepen_desc": "A vampiric, blind subclass relying on echolocation and heightened senses.",
+  "race_slepen_abilities": "Reduced reaction. Bonuses in other skills. Can sense movement.",
+
+  "race_likantrop_name": "Lycanthrope",
+  "race_likantrop_desc": "Infected with lycanthropy. Transformations bring both power and risk.",
+  "race_likantrop_abilities": "Boosts to strength and reaction. Nighttime side effects."
+}

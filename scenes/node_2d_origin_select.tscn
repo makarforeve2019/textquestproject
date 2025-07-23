@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=3 uid="uid://cbus1xie3a7n2"]
+
+[ext_resource type="Script" uid="uid://b7nc26ifxuaxl" path="res://scripts/node_2d_origin_select.gd" id="1_efo3d"]
+[ext_resource type="Texture2D" uid="uid://20epmgmvu2g6" path="res://assets/createplayer.png" id="1_lb5d2"]
+
+[node name="Node2D_OriginSelect" type="Node2D"]
+script = ExtResource("1_efo3d")
+
+[node name="Sprite2D_Background" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(1.125, 0.634766)
+texture = ExtResource("1_lb5d2")
+
+[node name="CanvasLayer_UILayer" type="CanvasLayer" parent="Sprite2D_Background"]
+
+[node name="StatsContainer" type="VBoxContainer" parent="Sprite2D_Background/CanvasLayer_UILayer"]
+anchors_preset = -1
+anchor_right = 0.551215
+offset_left = 34.0
+offset_top = 23.0
+offset_right = 480.0
+offset_bottom = 613.0
+theme_override_constants/separation = 10
+metadata/_edit_use_anchors_ = true
+
+[node name="Label_Caption" type="Label" parent="Sprite2D_Background/CanvasLayer_UILayer/StatsContainer"]
+layout_mode = 2
+
+[node name="Label_wealth" type="Label" parent="Sprite2D_Background/CanvasLayer_UILayer/StatsContainer"]
+layout_mode = 2
+
+[node name="OptionButton__wealth" type="OptionButton" parent="Sprite2D_Background/CanvasLayer_UILayer/StatsContainer"]
+layout_mode = 2
+
+[node name="Label_parent" type="Label" parent="Sprite2D_Background/CanvasLayer_UILayer/StatsContainer"]
+layout_mode = 2
+
+[node name="OptionButton__parent" type="OptionButton" parent="Sprite2D_Background/CanvasLayer_UILayer/StatsContainer"]
+layout_mode = 2
+
+[node name="Label_Result" type="Label" parent="Sprite2D_Background/CanvasLayer_UILayer/StatsContainer"]
+layout_mode = 2
+
+[node name="Button_StartGame" type="Button" parent="Sprite2D_Background/CanvasLayer_UILayer"]
+offset_left = 808.0
+offset_top = 603.0
+offset_right = 1137.0
+offset_bottom = 634.0
+text = "Начать игру"
+
+[connection signal="pressed" from="Sprite2D_Background/CanvasLayer_UILayer/Button_StartGame" to="." method="_on_button_start_game_pressed"]

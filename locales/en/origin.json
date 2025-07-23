@@ -1,0 +1,24 @@
+{
+  "title": "Origin Selection",
+  "wealth_label": "Wealth Level",
+  "parent_label": "Parents",
+  "continue": "Continue",
+
+  "wealth_rich": "Wealthy",
+  "wealth_average": "Average",
+  "wealth_poor": "Poor",
+
+  "parent_both": "Both Parents",
+  "parent_mother": "Only Mother",
+  "parent_father": "Only Father",
+  "parent_orphan": "Orphan",
+
+  "desc_wealth_rich": "A lot of gold and high-quality equipment at the start.",
+  "desc_wealth_average": "Some gold and average equipment at the start.",
+  "desc_wealth_poor": "Almost no gold and minimal gear at the start.",
+
+  "desc_parent_both": "Slight bonuses to all skills.",
+  "desc_parent_mother": "Bonuses to intellect and empathy.",
+  "desc_parent_father": "Bonuses to strength and reaction.",
+  "desc_parent_orphan": "No bonuses."
+}

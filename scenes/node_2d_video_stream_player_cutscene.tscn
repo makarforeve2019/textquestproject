@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://cv5newml4lve0"]
+
+[ext_resource type="Script" uid="uid://d272d5xpcmbrf" path="res://scripts/node_2d_video_stream_player_cutscene.gd" id="1_0vdrk"]
+[ext_resource type="VideoStream" uid="uid://bw1bm2l0hg5w1" path="res://videos/20250615_2142_Moonlit-Forest-Mystery_simple_compose_01jxtecgkdeaqssncvtfnk69he.ogv" id="2_0vdrk"]
+
+[node name="Node2D_VideoStreamPlayer_Cutscene" type="Node2D"]
+script = ExtResource("1_0vdrk")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="VideoStreamPlayer_Cutscene" type="VideoStreamPlayer" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+stream = ExtResource("2_0vdrk")
+expand = true
+
+[connection signal="ready" from="." to="." method="_on_ready"]

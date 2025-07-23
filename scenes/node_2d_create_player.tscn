@@ -1,0 +1,49 @@
+[gd_scene load_steps=3 format=3 uid="uid://cvvcyk5aiyda5"]
+
+[ext_resource type="Script" uid="uid://bv6862jpluyw4" path="res://scripts/node_2d_create_player.gd" id="1_kk2yf"]
+[ext_resource type="Texture2D" uid="uid://20epmgmvu2g6" path="res://assets/createplayer.png" id="2_xtbw0"]
+
+[node name="Node2D_create_player" type="Node2D"]
+script = ExtResource("1_kk2yf")
+
+[node name="Sprite2D_Background" type="Sprite2D" parent="."]
+position = Vector2(576, 323.5)
+scale = Vector2(1.125, 0.631836)
+texture = ExtResource("2_xtbw0")
+
+[node name="CanvasLayer_UILayer" type="CanvasLayer" parent="."]
+
+[node name="StatsContainer" type="VBoxContainer" parent="CanvasLayer_UILayer"]
+offset_left = 34.0
+offset_top = 23.0
+offset_right = 480.0
+offset_bottom = 613.0
+theme_override_constants/separation = 10
+metadata/_edit_use_anchors_ = true
+
+[node name="OptionButton" type="OptionButton" parent="CanvasLayer_UILayer/StatsContainer"]
+layout_mode = 2
+
+[node name="Label_StrengthLabel" type="Label" parent="CanvasLayer_UILayer/StatsContainer"]
+layout_mode = 2
+
+[node name="Label_ReactionLabel" type="Label" parent="CanvasLayer_UILayer/StatsContainer"]
+layout_mode = 2
+
+[node name="Label_IntellectLabel" type="Label" parent="CanvasLayer_UILayer/StatsContainer"]
+layout_mode = 2
+
+[node name="Label_EmpathyLabel" type="Label" parent="CanvasLayer_UILayer/StatsContainer"]
+layout_mode = 2
+
+[node name="Label_DescriptionLabel" type="Label" parent="CanvasLayer_UILayer/StatsContainer"]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+autowrap_mode = 3
+
+[node name="Button_Next" type="Button" parent="CanvasLayer_UILayer"]
+offset_left = 667.0
+offset_top = 574.0
+offset_right = 1113.0
+offset_bottom = 605.0
+text = "Далее"

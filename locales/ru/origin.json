@@ -1,0 +1,24 @@
+{
+  "title": "Выбор происхождения",
+  "wealth_label": "Уровень достатка",
+  "parent_label": "Родители",
+  "continue": "Продолжить",
+
+  "wealth_rich": "Богатый",
+  "wealth_average": "Средний достаток",
+  "wealth_poor": "Нищий",
+
+  "parent_both": "Оба родителя",
+  "parent_mother": "Только мама",
+  "parent_father": "Только папа",
+  "parent_orphan": "Сирота",
+
+  "desc_wealth_rich": "Много золота в начале, хорошее снаряжение.",
+  "desc_wealth_average": "Немного золота, среднее снаряжение.",
+  "desc_wealth_poor": "Почти нет золота, минимум снаряжения.",
+
+  "desc_parent_both": "Небольшие бонусы ко всем навыкам.",
+  "desc_parent_mother": "Бонусы к уму и эмпатии.",
+  "desc_parent_father": "Бонусы к силе и реакции.",
+  "desc_parent_orphan": "Без бонусов."
+}
