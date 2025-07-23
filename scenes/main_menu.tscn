@@ -44,9 +44,9 @@ text = "settings"
 
 [node name="Button_QuitButton" type="Button" parent="CanvasLayer_UILayer"]
 offset_left = 768.0
-offset_top = 320.0
+offset_top = 361.0
 offset_right = 1088.0
-offset_bottom = 369.0
+offset_bottom = 410.0
 text = "Выход"
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
